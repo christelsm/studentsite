@@ -1,38 +1,118 @@
+/* GLOBAL RESET */
+* {box-sizing: border-box;}
+body {margin: 0; }
+
+/* GLOBAL COLORS */
+body { color: #161616; }
+a { color: darkcyan; }
+a:hover { color: rgb(87, 87, 87); }
+
+/* GLOBAL TYPOGRAPHY */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #eddecc;
-    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
+}
+
+
+/* SITE STRUCTURE */
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+    color: #181818;
+    padding: 1em;
     display: grid;
-    align-content: center;
-    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
-    color: black;
+header a {
+    color: #161616;
+    text-decoration: none;  
+}
+
+header a:hover {
+    color: #cacaca;
+}
+
+/* SITE ID */
+site-id h1 {
+    margin: 0;
+}
+
+/* SITE NAV */
+.site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav a {
+    display: block;
+    padding: 1em;
+}
+
+/* MAIN */
+main {
+    background: #ffffff;
+}
+
+/* HERO SECTION*/
+.hero {
+    background-color: rgb(233, 216, 200);
+    text-align: center;
+    color: rgb(15, 15, 15);
+    padding: 6em 1em;
+}
+
+.hero h2 {
+    font-size: 6em;
+    line-height: 1;
     text-transform: uppercase;
-    text-align: center;
+    margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
-}
-
-p {
-    color: black;
-    text-align: center;
+.hero p {
     max-width: 30em;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
-ul {
-    display: table;
-    text-align: left;
-    margin: 0 auto;
+/* COURSES SECTION */
+.courses {
+    padding: 6em 1 em;
+    display: grid;
+    justify-content: center;
+}
+
+.courses ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.courses h3 {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 1em;
+}
+
+/* SOCIAL NAV */
+.social-nav ul {
+    display:  flex;
+    justify-content: center;
+    /* list style: name: */
+    margin: 0;
     padding: 0;
 }
 
-a{
-    color:darkcyan;
+.social-nav a {
+    display: block;
+    padding: 1em;
 }
