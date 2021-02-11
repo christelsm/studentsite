@@ -4,7 +4,7 @@ body {margin: 0; }
 
 /* GLOBAL COLORS */
 body { color: #161616; }
-a { color: darkcyan; }
+a { color: #161616; }
 a:hover { color: rgb(87, 87, 87); }
 
 /* GLOBAL TYPOGRAPHY */
@@ -19,7 +19,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: #ffffff;
+    background-color: rgb(233, 216, 200);
     color: #181818;
     padding: 1em;
     display: grid;
@@ -69,7 +69,8 @@ main {
 }
 
 .hero h2 {
-    font-size: 6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4em;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
@@ -105,11 +106,11 @@ footer {
 
 /* SOCIAL NAV */
 .social-nav ul {
-    display:  flex;
-    justify-content: center;
-    /* list style: name: */
     margin: 0;
     padding: 0;
+    display:  flex;
+    justify-content: center;
+    list-style: none;
 }
 
 .social-nav a {
