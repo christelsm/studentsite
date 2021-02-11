@@ -1,18 +1,33 @@
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #eddecc;
-    font-family: Myriad Variable Concept;
-    text-align: center;
+    margin: 0;
     display: grid;
     align-content: center;
     min-height: 100vh;
 }
 
 h1 {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 48px;
-    font-family: Abril Display Bold;
-    margin: 0;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 p {
     color: black;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+ul {
+    display: table;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a{
+    color:cadetblue;
 }
