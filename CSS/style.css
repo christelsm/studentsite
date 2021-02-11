@@ -1,0 +1,18 @@
+body {
+    background: #eddecc;
+    font-family: Myriad Variable Concept;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: Abril Display Bold;
+    margin: 0;
+}
+
+p {
+    color: black;
+}
