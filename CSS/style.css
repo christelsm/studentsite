@@ -3,8 +3,8 @@
 body {margin: 0; }
 
 /* GLOBAL COLORS */
-body { color: #5e5e5e; }
-a { color: #5e5e5e; }
+body { color: #707070; }
+a { color: #707070; }
 a:hover { color: #000000d8; }
 
 /* GLOBAL TYPOGRAPHY */
@@ -91,7 +91,7 @@ aside {
 .hero {
     background-color: rgb(233, 216, 200);
     text-align: center;
-    color: rgba(255, 255, 255, 0.712);
+    color: rgba(255, 255, 255, 0.733);
     padding: 6em 1em;
 }
 
@@ -155,7 +155,7 @@ footer {
     background-image: url('../img/raindrop.jfif');
     background-size: cover;
     background-position: center;
-    padding: 30vh 1em 20vh 1em;
+    padding: 30vh 1em 30vh 1em;
 }
 
 .page-home header {
