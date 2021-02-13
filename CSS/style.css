@@ -3,13 +3,13 @@
 body {margin: 0; }
 
 /* GLOBAL COLORS */
-body { color: #161616; }
-a { color: #161616; }
-a:hover { color: rgb(87, 87, 87); }
+body { color: #5e5e5e; }
+a { color: #5e5e5e; }
+a:hover { color: #000000d8; }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
 }
@@ -19,7 +19,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: rgb(233, 216, 200);
+    background-color: #ffffff;
     color: #181818;
     padding: 1em;
     display: grid;
@@ -28,12 +28,12 @@ header {
 }
 
 header a {
-    color: #161616;
+    color: #5e5e5e;
     text-decoration: none;  
 }
 
 header a:hover {
-    color: #363636;
+    color: #000000;
 }
 
 /* SITE ID */
@@ -91,12 +91,12 @@ aside {
 .hero {
     background-color: rgb(233, 216, 200);
     text-align: center;
-    color: rgb(15, 15, 15);
+    color: rgba(255, 255, 255, 0.712);
     padding: 6em 1em;
 }
 
 .hero h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 4em;
     line-height: 1;
     text-transform: uppercase;
@@ -145,10 +145,23 @@ footer {
     padding: 1em;
 }
 
-/* STYLING FOR SUB PAGES */
+/* CUSTOM STYLING FOR SPECIFIC SUB PAGES */
 .page-sub .hero {
     background-color: white;
     color: black;
+}
+
+.page-home .hero {
+    background-image: url('../img/raindrop.jfif');
+    background-size: cover;
+    background-position: center;
+    padding: 30vh 1em 20vh 1em;
+}
+
+.page-home header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
 }
 
 /* COURSE WORK SECTION */
