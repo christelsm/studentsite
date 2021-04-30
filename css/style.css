@@ -109,7 +109,6 @@ aside {
  
 /* COURSES SECTION */
 .courses {
-    background-color: rgb(223, 233, 233);
     padding: 2em 1em;
     display: grid;
     justify-content: center;
@@ -127,7 +126,7 @@ aside {
  
 /* FOOTER */
 footer {
-    padding: 1em;
+    padding: 0em 1em;
 }
  
 /* SOCIAL NAV */
