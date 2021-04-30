@@ -3,9 +3,9 @@
 body {margin: 0; }
  
 /* GLOBAL COLORS */
-body { color: #0000005d; }
-a { color: #0000005d; }
-a:hover { color: #000000d8; }
+body { color: #444444; }
+a { color: #444444; }
+a:hover { color: salmon; }
  
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -19,7 +19,6 @@ body {
  
 /* HEADER */
 header {
-    background-color: #ffffff;
     color: #181818;
     padding: 1em;
     display: grid;
@@ -28,7 +27,7 @@ header {
 }
  
 header a {
-    color: #777777;
+    color: #444444;
     text-decoration: none;  
 }
  
@@ -90,7 +89,7 @@ aside {
 /* HERO SECTION*/
 .hero {
     text-align: center;
-    color: rgba(255, 255, 255, 0.733);
+    color: rgba(255, 255, 255, 0.897);
     padding: 6em 1em;
 }
  
@@ -150,8 +149,7 @@ footer {
     background-size: cover;
     background-position: center;
     padding: 20vh 1em 20vh 1em;
-    background-color: rgba(184, 207, 204, 0.425);
-    color: #707070;
+    color: rgba(255, 255, 255, 0.897);
 }
  
 .page-home .hero {
