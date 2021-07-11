@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             // else (if false) do this:
             menunav.setAttribute('data-navstate', 'open');
-        };
+        }
     });
 
 });
