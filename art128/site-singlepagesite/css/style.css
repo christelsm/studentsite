@@ -480,12 +480,12 @@ form textarea {
 
  /* CUSTOM SITE CSS */
 
- .secction-title {
+ .section-title {
      text-align: center;
      margin: 3em;
  }
 
- .secction-title::after {
+ .section-title::after {
      content: "";
      display: block;
      width: 100px;
