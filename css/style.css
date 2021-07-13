@@ -168,12 +168,10 @@ footer {
 /* COURSE WORK SECTION */
 .coursework {
     background-color: rgb(223, 233, 233);
-    padding: 2em 1em;
+    padding: 6em 1em;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
+    flex-wrap: wrap;
 }
  
 .projects {
