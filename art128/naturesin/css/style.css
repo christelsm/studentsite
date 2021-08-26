@@ -1,0 +1,693 @@
+/* #BASE CSS (Initital Setup)
+---------------------------------
+    #BASE CONTENT
+        #TYPOGRAPHY
+            #BODY
+            #HEADINGS
+            #PARAGRAPHS
+            #LINKS
+            #HELPERS
+        #MEDIA
+            #IMAGES
+        #COMPONENTS
+            #BUTTONS
+    #BASE LAYOUT
+        #SIMPLE RESET
+        #MEDIAQUERIES
+        #CONTAINER
+        #GRID SYSTEM
+            #CLEARFIX
+    #BASE SITE
+        #SITE STRUCTURE
+            #HEADER
+                # site-id (LOGO)
+            #FOOTER
+            #SECTIONS
+            #SUB PAGES
+        #SITE NAVIGATION
+            #TOGGLE-NAV (Default for Small Screens)
+--------------------------------- */
+
+
+/* TYPOGRAPHY */
+body {
+    font-size: 87.5%; /* 14px */
+    font-family: calibri, open sans, helvetica;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .8);
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: .5em 0;
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif ;
+}
+
+h1 {
+    font-size: 3em; /* 48px */
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em; /* 36px */
+    line-height: 1.1;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5em; /* 24px */
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 2em;
+    margin: 1em;
+}
+
+h4 {
+    font-size: 1.3125em; /* 21px */
+    line-height: 1.3;
+    text-align: center;
+}
+
+h5 {
+    font-family: calibri, open sans, helvetica, arial;
+    text-decoration: italic;
+    font-size: 1.125em; /* 18px */
+    line-height: 1.4;
+}
+
+h6 {
+    font-size: 3em; /* 16px */
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* PARAGRAPHS */
+p {
+    margin: .5em 0;
+    max-width: 38em;
+    text-align: center;
+}
+
+/* LINKS */
+a {
+    color: #919b87;
+    text-decoration: none;
+}
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    text-align: center;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 6em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+ 
+
+/* HELPER CLASS */
+.text-centered {
+    text-align: center;
+}
+
+.full-width {
+    max-width: none;
+    width: 100%;
+}
+
+.horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* BUTTONS */
+
+.button-shop {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18pt;
+    line-height: 0.5;
+    color: #212121;
+    padding: 0.75em 0em;
+    display: inline-block;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    
+}
+
+.button-shop:hover {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18pt;
+    text-decoration: underline;
+    line-height: 0.5;
+    color: #000000;
+    padding: 0.75em 0em;
+    display: inline-block;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    
+}
+
+.button,
+button,
+form input[type="Submit"] {
+    font-size: inherit;
+    line-height: 0.5;
+    background-color: rgba(245, 245, 245, 0.562);
+    border: 1.5px solid #212121;
+    color: #212121;
+    padding: 0.75em;
+    display: inline-block;
+    margin: .5em .5em .5em 0em;
+    text-align: center;
+
+
+    
+}
+
+.button:hover,
+button:hover
+form input[type="Submit"]:hover {
+    border: 1.5px solid #212121;
+    background-color: rgba(245, 245, 245, 0.925);
+    color: black;
+    text-decoration: none;
+    
+}
+
+.button.alt {
+    background-color: rgba(245, 245, 245, 0.562);
+    border: 1.5px solid #212121;
+}
+
+.button.alt:hover {
+    border: 1.5px solid #212121;
+    background-color: rgba(245, 245, 245, 0.925);
+    color: black;
+}
+
+
+/* LAYOUT */
+
+/* SIMPLE RESET */
+* { box-sizing: border-box; }
+body { margin: 0;} 
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.container-gallery {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    /* TABLET SIZED STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%; /* 16px */
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%; /* 18px */
+    }
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* FOR DEMO PURPOSES ONLY */
+body.demo{
+    padding-top: 2em;
+}
+body.demo::before {
+    content: "Small Screen (Mobile) Less Than 768px";
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    padding: .5em;
+}
+
+@media (min-width: 768px) {
+    body.demo::before {
+         content: "Midsize (Tablet) Screen 768px - 1050px";
+    }
+}
+
+@media (min-width: 1050px) {
+    body.demo::before {
+         content: "Large (Notebook) Screen 1050px - 1250px";
+    }
+}
+
+@media (min-width: 1250px) {
+    body.demo::before {
+         content: "Extra Large (Desktop) Screen 1250px";
+    }
+}
+
+/* SEMANTIC GRID SYSTEM */
+
+.row > .column {
+    margin-bottom: 4%;
+}
+
+@media (min-width: 768px) {
+
+    .row {
+        display: flex; 
+        justify-content: space-between;
+        margin-left: -2%;
+        margin-right: -2%;
+    }
+
+    .row > .column {
+        flex-grow: 1;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .row > .column.one-half {
+        max-width: 46%;
+    }
+
+    .row > .column.one-third {
+        max-width: 29.3333%;
+    }
+
+    .row > .column.two-thirds {
+        max-width: 62.6666%;
+    }
+
+    .row > .column.one-fourth{
+        max-width: 21%;
+    }
+
+    .row > .column.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* FOR DEMO PURPOSES ONLY */
+.demo .column   {
+    padding: 1em;
+    text-align: center;
+
+}
+
+/* SITE STRUCTURE */
+
+/* SITE HEADER */
+.site-header {
+    padding: 0em 0;
+}
+
+/* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
+@media (min-width: 768px) {
+    .site-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* STYLING FOR BOTH HEADER AND FOOTER */
+.site-header a,
+.site-footer a {
+    color: #212121;
+}
+
+.site-header a:hover,
+.site-footer a:hover {
+    color: #919b87;
+    text-decoration: none;
+}
+
+/* LOGO AREA */
+.site-id h1{
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: 0em;
+    text-align: center;
+}
+
+.site-id p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #919b87;
+    font-size: 12pt;
+    margin: 0;
+    padding-top: 0em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+/* SITE NAV */
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav h5 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: right;
+    font-style: italic;
+}
+
+.site-nav a {
+    display: block;
+    padding: 1em;
+}
+
+.site-nav .menu-button {
+    display: none;
+}
+
+
+/* SECTIONS */
+section {
+    padding: 3em 0;
+}
+
+
+/* HERO */
+
+
+/* CUSTOM HOME PAGE STYLING */
+.hero-header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
+
+ 
+.page-home .hero {
+    background-image: url('../img/hero/naturesin-hero-homeleaves.png');
+    background-size: cover;
+    background-position: center;
+    padding: 30vh 1em 30vh 1em;
+}
+
+
+/* CUSTOM STYLING FOR SPECIFIC SUB PAGES */
+
+.hero {
+    padding: 6em 4%;
+    text-align: center;
+}
+
+.hero h1, p {
+    max-width: 500em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* TOGGLE NAV */
+
+@media (max-width: 767px) {
+    .toggle-nav .site-id {
+        position: absolute;
+    }
+    .toggle-nav .site-nav {
+        text-align: right;
+    }    
+    .toggle-nav .site-nav .menu-button {
+        display: block;
+        display: inline-block;
+        cursor: pointer;
+        padding: .3em .8em;
+        margin: .8em 0;
+    }
+    .toggle-nav .site-nav ul {
+        display: block;
+        text-align: center;
+    }
+    .toggle-nav .site-nav a:hover {
+        color: white;
+    }
+    .toggle-nav[data-navstate="closed"] ul {
+        height: 0;
+        overflow: hidden;
+    }
+    .toggle-nav[data-navstate="open"] ul {
+        height: auto;
+        overflow: visible;
+    }
+
+    /* NAVICON */
+    .toggle-nav .site-nav .menu-button.navicon {
+        border: none;
+        color: white;
+        padding: 0;
+    }
+    .toggle-nav .site-nav .menu-button.navicon::after {
+        content: "\2630";
+        display: inline-block;
+        padding: 0 .4em;
+        margin: 0;
+        color: black;
+        font-size: 1.5em;
+    }
+    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+        content: "\2715";
+    }
+}
+
+/* SUBPAGES */
+
+article {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h1, 
+article h1 + .subhead,
+article {
+    text-align: center;
+}
+
+article h2.subhead {
+    font-size: 1.5em;
+    line-height: 1.2;
+    text-align: center;
+}
+article .subhead {
+    font-weight: normal;
+    opacity: .7;
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+
+
+
+ /*article p:first-of-type {
+     font-size: 1.4em;
+     line-height: 1.3;
+ }*/
+
+ /* FORMS */
+
+ form {
+     max-width: 600px;
+     margin: 2em auto;
+ }
+
+ form label,
+ form input,
+ form textarea {
+     box-sizing: border-box;
+     display: block;
+     width: 100%;
+ }
+
+ form label {
+     margin-top: 1em;
+     margin-bottom: 0.25em;
+ }
+
+form input[type="text"],
+form textarea {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    color: #666;
+}
+
+form textarea {
+    min-height: 10em;
+    line-height: 1.5;
+}
+
+ form input[type="submit"] {
+     margin-top: 1.5em;
+     width: auto;
+ }
+
+
+ /* CUSTOM SITE CSS */
+
+ .section-title {
+     text-align: center;
+     margin: 0em 0em 3em 0em;
+ }
+
+ .bottom-title {
+     text-align: center;;
+     margin: 0em 0em 6em 0em;
+ }
+
+ .section-title::after {
+     content: "";
+     display: block;
+     width: 100px;
+     margin: 0.5em auto;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+ }
+
+ .site-header.sticky {
+     position: fixed;
+     width: 100%;
+     background-color: #ffffffde;
+ }
+
+ .site-footer {
+    background-color: #919b8763;
+    width: 100%;
+    bottom: 0;
+}
+
+
+ .site-header.sticky + main {
+     padding-top: 3em;
+ }
+
+ #about {
+    background-image: url('../img/hero/naturesin-hero-shadowwall.png');
+    background-size: cover;
+    background-position: center;
+    padding: 22vh 1em 20vh 1em;
+ }
+ 
+
+
+ #quote {
+     background-image: url('../img/hero/naturesin-hero-quoteleaves.png');
+     background-size: cover;
+     background-position: center;
+     padding: 28vh 1em 40vh 1em;
+ }
+
+ #shop {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+ }
+
+ #contact {
+    background-image: url('../img/hero/naturesin-hero-contactleaves.png');
+    background-size: cover;
+    background-position: center;
+    padding: 30vh 1em 30vh 1em;
+ }
+
+ /* Vertical Media Query add height/padding to bottom of contact section only for large screens */
+
+ @media (min-height: 600px) {
+     #contact {
+         padding-bottom: 20em;
+     }
+ }
+
+
+/* STICKY SOCIAL MEDIA SIDEBAR */
+/* Style all font awesome icons */
+.fa {
+    background-color: transparent;
+    display: inline-block;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 0px;
+  transition: all 0.3s ease;
+  color: #212121;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #919b8763;
+}
+
+.facebook {
+  background: transparent;
+  color: #212121;
+}
+
+.twitter {
+  background: transparent;
+  color: #212121;
+}
+  
+.fa-instagram {
+    background: transparent;
+    color: #212121;
+  }

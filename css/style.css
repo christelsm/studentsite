@@ -114,7 +114,7 @@ aside {
  
 /* COURSES SECTION */
 .courses {
-    padding: 2em 1em;
+    padding: 3em 1em;
     display: grid;
     justify-content: center;
 }
@@ -150,15 +150,14 @@ footer {
  
 /* CUSTOM STYLING FOR SPECIFIC SUB PAGES */
 .page-sub .hero {
-    background-image: url('../img/raindrop.jfif');
+    background-image: url('../art128/img/raindrop.jfif');
     background-size: cover;
     background-position: center;
     padding: 20vh 1em 20vh 1em;
-    color: rgba(255, 255, 255, 0.897);
 }
  
 .page-home .hero {
-    background-image: url('../img/raindrop.jfif');
+    background-image: url('../art128/img/raindrop.jfif');
     background-size: cover;
     background-position: center;
     padding: 30vh 1em 30vh 1em;
@@ -172,8 +171,7 @@ footer {
  
 /* COURSE WORK SECTION */
 .coursework {
-    background-color: rgb(223, 233, 233);
-    padding: 6em 1em;
+    padding: 4em 1em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
