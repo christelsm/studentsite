@@ -1,0 +1,184 @@
+/* GLOBAL RESET */
+* {box-sizing: border-box;}
+body {margin: 0; }
+ 
+/* GLOBAL COLORS */
+body { color: #444444; }
+a { color: #444444; }
+a:hover { color: lightcoral; }
+ 
+/* GLOBAL TYPOGRAPHY */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
+}
+ 
+ 
+/* SITE STRUCTURE */
+ 
+/* HEADER */
+header {
+    background-color: rgb(248, 248, 248);
+    color: #181818;
+    padding: .5em 3em;
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    align-items: center;
+}
+ 
+header a {
+    color: #444444;
+    text-decoration: none;  
+}
+ 
+header a:hover {
+    color: #000000;
+}
+ 
+/* SITE ID */
+site-id h1 {
+    margin: 0;
+}
+ 
+/* SITE NAV */
+.site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+.site-nav a {
+    display: block;
+    padding: 1em;
+}
+ 
+/* MAIN */
+main {
+    background: #ffffff;
+}
+ 
+ 
+/* LAYOUT */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+/* SIDEBAR/ASIDE */
+aside {
+    padding: 2em 0;
+  }
+  
+@media (min-width: 768px) {
+    .two-col-sidebar {
+        display: grid;
+        grid-template-columns: 20em auto;
+    }
+    .two-col-sidebar aside {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 0 3em 2em 0;
+        padding: .3em 2em 0 0;
+    }
+}
+ 
+.primary {
+    padding: 0 1em;
+}
+ 
+/* HERO SECTION*/
+.hero {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.897);
+    padding: 6em 1em;
+}
+ 
+.hero h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 4em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+ 
+.hero p {
+    max-width: 30em;
+    margin: 1em auto;
+}
+ 
+/* COURSES SECTION */
+.courses {
+    padding: 3em 1em;
+    display: grid;
+    justify-content: center;
+}
+ 
+.courses ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+.courses h3 {
+    text-align: center;
+}
+ 
+/* FOOTER */
+footer {
+    padding: 1em;
+}
+ 
+/* SOCIAL NAV */
+.social-nav ul {
+    margin: 0;
+    padding: 0;
+    display:  flex;
+    justify-content: center;
+    list-style: none;
+}
+ 
+.social-nav a {
+    display: block;
+    padding: 1em;
+}
+ 
+/* CUSTOM STYLING FOR SPECIFIC SUB PAGES */
+.page-sub .hero {
+    background-image: url('../art128/img/raindrop.jfif');
+    background-size: cover;
+    background-position: center;
+    padding: 20vh 1em 20vh 1em;
+}
+ 
+.page-home .hero {
+    background-image: url('../art128/img/raindrop.jfif');
+    background-size: cover;
+    background-position: center;
+    padding: 30vh 1em 30vh 1em;
+}
+ 
+.page-home header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+}
+ 
+/* COURSE WORK SECTION */
+.coursework {
+    padding: 4em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.projects {
+    margin: 2em;
+}
+ 
